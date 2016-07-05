@@ -17,19 +17,32 @@
 //     return total;
 // }
 
-interface Todo {
-  name: string;
-  completed?: boolean;
+// interface Todo {
+//   name: string;
+//   completed?: boolean;
+// }
+//
+// interface ITodoService {
+//   add(todo: Todo): Todo;
+//   delete(todoId: number): void;
+//   getAll(): Todo[];
+//   getById(todoId: number): Todo;
+//
+// }
+//
+// var todo: Todo = {
+//   name: 'be good'
+// };
+
+interface jQuery {
+  (selector: string): HTMLElement;
+  version: number;
 }
 
-interface ITodoService {
-  add(todo: Todo): Todo;
-  delete(todoId: number): void;
-  getAll(): Todo[];
-  getById(todoId: number): Todo;
-
+var $ = <jQuery> function(selector) {
+  //find DOM element
 }
 
-var todo: Todo = {
-  name: 'be good'
-};
+$.version = 1.18;
+
+var container = $('#container')

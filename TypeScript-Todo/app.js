@@ -16,6 +16,8 @@
 //
 //     return total;
 // }
-var todo = {
-    name: 'be good'
+var $ = function (selector) {
+    //find DOM element
 };
+$.version = 1.18;
+var container = $('#container');
